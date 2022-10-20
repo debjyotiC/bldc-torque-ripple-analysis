@@ -1,0 +1,1 @@
+# bldc-torque-ripple-analysis
