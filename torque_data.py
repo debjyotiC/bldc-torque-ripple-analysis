@@ -16,7 +16,6 @@ T = 1.006e-06
 ft = abs(fft(torque) * T)
 freq = abs(fftfreq(N, d=T))
 
-
 fig, axs = plt.subplots(2, 1)
 plt.suptitle(f"Torque spectra {path.split('.')[0]}", fontsize=14)
 
@@ -28,7 +27,7 @@ axs[0].grid(True)
 axs[0].legend(loc='best')
 
 # plot Torque FFT
-axs[1].semilogy(freq/1000, ft, '-', label='Torque FFT')
+axs[1].semilogy(freq / 1000, ft, '-', label='Torque FFT')
 axs[1].set_xlabel('Frequency (kHz)')
 axs[1].set_ylabel('FFT Mag')
 axs[1].grid(True)
